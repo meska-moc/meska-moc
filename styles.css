@@ -422,3 +422,7 @@ video {
         margin: 0 10px;
     }
 }
+.card {
+    width: 100%; /* Dostosuj szerokość do małych ekranów */
+    margin: 10px 0;
+}
