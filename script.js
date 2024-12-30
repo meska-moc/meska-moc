@@ -51,3 +51,10 @@
     window.addEventListener("scroll", revealSections);
     revealSections(); // Trigger on load
 });
+document.getElementById("backToTop").addEventListener("click", function () {
+    if ('scrollTo' in window) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+        window.scrollTop = 0; // Fallback dla starszych przeglądarek
+    }
+});
