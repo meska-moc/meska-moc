@@ -372,3 +372,9 @@ video {
 .menu a:focus {
     outline: 2px solid #f00;
 }
+.menu a:hover {
+    color: #007bff;
+}
+.menu-toggle.active {
+    background-color: #ddd;
+}
