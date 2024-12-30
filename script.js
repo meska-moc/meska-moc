@@ -58,3 +58,6 @@ document.getElementById("backToTop").addEventListener("click", function () {
         window.scrollTop = 0; // Fallback dla starszych przeglądarek
     }
 });
+document.querySelector('.menu-toggle').addEventListener('click', function () {
+    this.classList.toggle('active');
+});
