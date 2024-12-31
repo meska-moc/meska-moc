@@ -1,24 +1,29 @@
 ﻿<!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
+
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia jednego z nas</title>
+     <title>Historia jednego z nas</title>
 	<meta name="description" content="Poznaj inspirującą historię uczestnika „Męskiej Mocy” i dowiedz się, jak pokonał swoje wyzwania.">
 	<meta name="keywords" content="Męska Moc, rozwój osobisty, spotkania, wspólnota">
 	<meta name="author" content="Bartłomiej Kochowicz">
+	<meta property="og:title" content="Historia jednego z nas">
+	<meta property="og:description" content="Poznaj inspirującą historię uczestnika „Męskiej Mocy” i dowiedz się, jak pokonał swoje wyzwania.">
+	<meta property="og:image" content="./logo.png">
+	<meta property="og:url" content="https://meska-moc.github.io/meska-moc/index.html">
+	<meta property="og:type" content="website">
 
+	
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-   <header>
-    <img src="./logo.png" alt="Męska Moc Logo">
+    <header>
+    <img src="./logo.png" alt="Logo Męska Moc - Wspólna Droga do Rozwoju Osobistego">
     <h1>Męska Moc</h1>
     <p>Wspólna Droga - Twój rozwój osobisty i mentalny</p>
     <nav class="navbar">
-        <button class="menu-toggle" aria-label="Toggle navigation menu">
-            &#9776;
-        </button>
+        
         <ul class="menu">
             <li><a href="./index.html#about">O nas</a></li>
             <li><a href="./index.html#meetings">Spotkania</a></li>
@@ -39,14 +44,15 @@
 
     <footer>
     <p>&copy; 2024 Męska Moc. Wszystkie prawa zastrzeżone.</p>
-    <button id="backToTop" class="button">Powrót do góry</button>
+   <button id="backToTop" class="button" aria-label="Powrót do góry strony">Powrót do góry</button>
+	  <a href="./index.html" class="button">Powrót do strony głównej</a>
+
 </footer>
 <script>
     document.getElementById("backToTop").addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 </script>
-
 </body>
 </html>
 
