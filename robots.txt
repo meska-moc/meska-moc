@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meska-moc.github.io/meska-moc/sitemap.xml
