@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://meska-moc.github.io/meska-moc/index.html</loc>
-    <priority>1.0</priority>
+    <loc>https://meska-moc.github.io/meska-moc/</loc>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://meska-moc.github.io/meska-moc/meeting1.html</loc>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meska-moc.github.io/meska-moc/meeting2.html</loc>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meska-moc.github.io/meska-moc/meeting3.html</loc>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://meska-moc.github.io/meska-moc/article1.html</loc>
