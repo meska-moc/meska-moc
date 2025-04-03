@@ -378,3 +378,7 @@ video {
 .menu-toggle.active {
     background-color: #ddd;
 }
+.section-dark h2 {
+  color: white;
+}
+
