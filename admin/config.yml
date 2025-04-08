@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: meska-moc/meska-moc
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "posts/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Tytuł", name: "title", widget: "string" }
+      - { label: "Data publikacji", name: "date", widget: "datetime" }
+      - { label: "Obrazek", name: "image", widget: "image" }
+      - { label: "Treść", name: "body", widget: "markdown" }
+
+  - name: "spotkania"
+    label: "Spotkania"
+    folder: "posts/spotkania"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nazwa wydarzenia", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Opis", name: "body", widget: "markdown" }
