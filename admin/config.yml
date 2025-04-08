@@ -3,6 +3,8 @@ backend:
   repo: meska-moc/meska-moc
   branch: main
 
+site_url: https://meska-moc.netlify.app
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
