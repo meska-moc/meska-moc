@@ -13,5 +13,19 @@
 
     <!-- Główny CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+
+    <!-- 👇 Dodany kod do bezpiecznego uruchamiania -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var ncRoot = document.getElementById('nc-root');
+        if (ncRoot) {
+          console.log("✅ Element #nc-root znaleziony.");
+          // CMS ładuje się automatycznie przez <script src="...netlify-cms.js">
+          // ale możemy tu ewentualnie dodać własną logikę
+        } else {
+          console.error("❌ Element #nc-root NIE został znaleziony!");
+        }
+      });
+    </script>
   </body>
 </html>
