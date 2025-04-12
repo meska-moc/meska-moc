@@ -1,6 +1,6 @@
 backend:
  backend:
-  name: meska-moc
+  name: github
   repo: meska-moc/meska-moc
   branch: main
 
