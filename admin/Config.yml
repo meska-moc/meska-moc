@@ -4,7 +4,6 @@ backend:
   branch: main
 site_url: https://meska-moc.netlify.app
 
-
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
@@ -15,10 +14,10 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Tytuł", name: "title", widget: "string" }
-      - { label: "Data publikacji", name: "date", widget: "datetime" }
-      - { label: "Obrazek", name: "image", widget: "image" }
-      - { label: "Treść", name: "body", widget: "markdown" }
+      - { label: "Tytuł", name: "title", widget: "string", required: true, hint: "Podaj tytuł artykułu" }
+      - { label: "Data publikacji", name: "date", widget: "datetime", format: "YYYY-MM-DD", required: true, hint: "Wybierz datę publikacji" }
+      - { label: "Obrazek", name: "image", widget: "image", required: true, hint: "Dodaj obrazek w formacie PNG lub JPG" }
+      - { label: "Treść", name: "body", widget: "markdown", required: true, hint: "Wprowadź treść artykułu w formacie Markdown" }
 
   - name: "spotkania"
     label: "Spotkania"
@@ -26,7 +25,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Nazwa wydarzenia", name: "title", widget: "string" }
-      - { label: "Data", name: "date", widget: "datetime" }
-      - { label: "Opis", name: "body", widget: "markdown" }
+      - { label: "Nazwa wydarzenia", name: "title", widget: "string", required: true, hint: "Podaj nazwę wydarzenia" }
+      - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD", required: true, hint: "Wybierz datę wydarzenia" }
+      - { label: "Opis", name: "body", widget: "markdown", required: true, hint: "Dodaj opis wydarzenia w formacie Markdown" }
 publish_mode: editorial_workflow
