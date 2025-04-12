@@ -1,10 +1,13 @@
 backend:
- backend:
   name: github
   repo: meska-moc/meska-moc
   branch: main
+  base_url: https://your-auth-provider.com
+  auth_endpoint: /auth
+
 
 site_url: https://meska-moc.netlify.app
+
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -30,3 +33,4 @@ collections:
       - { label: "Nazwa wydarzenia", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Opis", name: "body", widget: "markdown" }
+publish_mode: editorial_workflow
