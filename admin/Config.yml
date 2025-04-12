@@ -1,5 +1,6 @@
 backend:
-  name: github
+ backend:
+  name: test-repo
   repo: meska-moc/meska-moc
   branch: main
 
